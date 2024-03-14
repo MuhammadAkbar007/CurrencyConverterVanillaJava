@@ -96,4 +96,40 @@ public class ServiceImpl implements Service {
             System.out.println(amount + " so'm = " + (amount / roublePilot) + " rublga teng !");
         }
     }
+
+    @Override
+    public void dollarToSum() {
+        double amunt = giveAmount();
+        if (amunt == 0) {
+            System.out.println();
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("Noto'g'ri summa miqdor kiritildi !");
+        } else {
+            System.out.println(amunt + " dollar = " + (amunt * dollarPilot) + " so'mga teng !");
+        }
+    }
+
+    @Override
+    public void euroToSum() {
+        double amunt = giveAmount();
+        if (amunt == 0) {
+            System.out.println();
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("Noto'g'ri summa miqdor kiritildi !");
+        } else {
+            System.out.println(amunt + " yevro = " + (amunt * euroPilot) + " so'mga teng !");
+        }
+    }
+
+    @Override
+    public void roubleToSum() {
+        double amunt = giveAmount();
+        if (amunt == 0) {
+            System.out.println();
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("Noto'g'ri summa miqdor kiritildi !");
+        } else {
+            System.out.println(amunt + " rubl = " + (amunt * roublePilot) + " so'mga teng !");
+        }
+    }
 }

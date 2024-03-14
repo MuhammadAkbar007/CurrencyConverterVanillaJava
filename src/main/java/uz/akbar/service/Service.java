@@ -6,4 +6,10 @@ public interface Service {
     void sumToEuro();
 
     void sumToRouble();
+
+    void dollarToSum();
+
+    void euroToSum();
+
+    void roubleToSum();
 }

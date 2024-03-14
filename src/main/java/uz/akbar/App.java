@@ -74,13 +74,13 @@ public class App {
                     choice = sc.nextLine();
                     switch (choice) {
                         case "1":
-//                            service.sumToDollar();
+                            service.dollarToSum();
                             break;
                         case "2":
-//                            service.sumToEuro();
+                            service.euroToSum();
                             break;
                         case "3":
-//                            service.sumToRouble();
+                            service.roubleToSum();
                             break;
                         case "4":
                             System.out.println();
@@ -93,7 +93,6 @@ public class App {
                     break;
                 case "3":
                     isOnBoard = false;
-
                     break;
                 default:
                     System.out.println("Noto'g'ri tanlov!");
